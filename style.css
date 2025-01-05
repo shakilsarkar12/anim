@@ -119,3 +119,30 @@ section{
     display: block;
 }
 
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    color: #00ec00;
+    font-size: 25px;
+    z-index: 1000;
+    animation: text 5s ease-in-out infinite;
+}
+
+.text samp{
+    display: inline-block;
+    width: 70px;
+    transition: all .3s ease-in;
+}
+
+
+@keyframes text {
+    0%, 100%{
+        transform: translateX(20px) translateY(20);
+    }
+    25%, 50%{
+        transform: translateX(-20px) translateY(-20px);
+    }
+}
