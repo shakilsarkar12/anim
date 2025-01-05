@@ -8,8 +8,8 @@ const close = document.getElementById("close");
 open.addEventListener("click", () => {
   box.classList.remove("close");
   box.classList.add("open");
-  open.classList.remove("active")
-  close.classList.add("active")
+  open.classList.remove("active");
+  close.classList.add("active");
   firstText.innerHTML = "close";
   secondText.innerHTML = "close";
 });
@@ -17,6 +17,8 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
   box.classList.remove("open");
   box.classList.add("close");
-  open.classList.add("active")
-  close.classList.remove("active")
+  open.classList.add("active");
+  close.classList.remove("active");
+  firstText.innerHTML = "open";
+  secondText.innerHTML = "open";
 });

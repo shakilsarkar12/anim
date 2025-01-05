@@ -128,7 +128,7 @@ section{
     color: #00ec00;
     font-size: 25px;
     z-index: 1000;
-    animation: text 5s ease-in-out infinite;
+    animation: text 16s linear infinite;
 }
 
 .text samp{
@@ -139,10 +139,19 @@ section{
 
 
 @keyframes text {
-    0%, 100%{
-        transform: translateX(20px) translateY(20);
+    0%,100%{
+        transform: translateX(-70px) translateY(-60px) rotate(-10deg);
     }
-    25%, 50%{
-        transform: translateX(-20px) translateY(-20px);
+
+    25%{
+        transform: translateX(60px) translateY(60px) rotate(15deg);
+    }
+
+    50%{
+        transform: translateX(90px) translateY(-60px) rotate(-30deg);
+    }
+
+    75%{
+        transform: translateX(-70px) translateY(70px) rotate(30deg);
     }
 }
