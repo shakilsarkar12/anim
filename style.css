@@ -10,6 +10,7 @@ section{
     align-items: center;
     min-height: 100vh;
     background: #050505;
+    overflow: hidden;
 }
 
 .cube{
@@ -95,15 +96,26 @@ section{
     right: 0;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
     cursor: pointer;
     -webkit-user-select: none;
 }
 
 .button span{
+    width: 60px;
+    display: none;
     background: #fff;
     margin-right: 30px;
     padding: 4px 10px;
     font-size: 20px;
     border-radius: 4px;
 }
+
+.button #close.active{
+    display: block;
+}
+
+.button #open.active{
+    display: block;
+}
+
